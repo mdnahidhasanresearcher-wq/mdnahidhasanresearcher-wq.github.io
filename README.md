@@ -30,6 +30,13 @@ Live address (after publishing): **https://mdnahidhasanresearcher-wq.github.io/*
 Upload your PDF into the `files` folder with exactly this name: `MD_Nahid_Hasan_CV.pdf`.
 The Download CV button then works automatically.
 
+Use a **public version** of your CV. Remove your home address, phone number, WeChat ID and your referees' email addresses first. Write "Referees available on request" instead.
+
+### What is still marked [TO ADD]
+- Google Scholar link (create a profile at scholar.google.com once you have a publication)
+- ResearchGate link
+- Your photo (optional)
+
 ### Add your photo
 Upload a square photo to `assets/img/profile.jpg`. Then, in `index.html`, find the comment `TO ADD YOUR PHOTO` and follow its instructions.
 
@@ -42,7 +49,9 @@ In the **Contact** section of `index.html`, for each link:
 ## Privacy reminders
 - Anything in this repository is **public**, even files you don't link to.
 - Don't upload confidential research, unpublished data, or private documents.
-- Remove your home address, phone number, passport number and date of birth from the public CV.
+- Remove your home address, phone number, WeChat ID, passport number and date of birth from the public CV.
+- Don't publish other people's contact details (for example, referees' emails) without their permission.
+- Check with your supervisors before adding new details or results from joint, unpublished work.
 
 ## How to turn on the website (one time)
 1. On GitHub, go to the repository → **Settings** → **Pages**.

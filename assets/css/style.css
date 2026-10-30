@@ -170,6 +170,36 @@ p.todo, li.todo { display: inline-block; }
   background: var(--todo-bg); padding: 3px 10px; border-radius: 999px; margin-bottom: 12px;
 }
 
+.card-grid.three { grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); }
+.also-label { margin: 36px 0 12px; font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+
+/* Status label, e.g. "In progress" */
+.status {
+  display: inline-block; font-family: var(--sans); font-size: .72rem; font-weight: 600; letter-spacing: .04em;
+  text-transform: uppercase; color: var(--accent); background: rgba(15, 118, 110, .10);
+  padding: 3px 10px; border-radius: 999px; vertical-align: middle;
+}
+
+/* Lists with bullets inside cards / timeline */
+.bullets { margin: 0; padding-left: 1.2em; }
+.bullets li { margin-bottom: 6px; }
+.bullets li::marker { color: var(--accent); }
+.plain-list { list-style: none; margin: 0; padding: 0; }
+.plain-list li { padding: 8px 0; border-bottom: 1px dashed var(--line); }
+.plain-list li:last-child { border-bottom: 0; }
+.plain-list em { color: var(--muted); }
+
+/* Coursework */
+.course-grid { display: grid; gap: 28px; }
+.course-grid h4 { font-family: var(--sans); font-size: .95rem; color: var(--ink); margin: 0 0 12px; }
+
+/* Projects */
+.project-list { display: grid; gap: 20px; }
+.project-head { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.project-date { font-size: .88rem; font-weight: 600; color: var(--muted); }
+.project h3 { font-size: 1.22rem; }
+.working-title { font-family: var(--sans); font-size: .85rem; font-weight: 400; color: var(--muted); }
+
 /* ---------- Publications ---------- */
 .pub-list { padding-left: 1.4em; margin: 16px 0 0; }
 .pub-list li { margin-bottom: 12px; padding-left: 4px; }
@@ -178,6 +208,12 @@ p.todo, li.todo { display: inline-block; }
 .chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .chips li { font-size: .88rem; padding: 5px 12px; border-radius: 999px; background: var(--bg-alt); border: 1px solid var(--line); color: var(--ink); }
 .chips li.todo { background: var(--todo-bg); border-color: transparent; color: var(--todo-ink); }
+.chips small { color: var(--muted); margin-left: 4px; }
+.section.alt .chips li { background: #fff; }
+.lang-list { list-style: none; margin: 0; padding: 0; }
+.lang-list li { padding: 8px 0; border-bottom: 1px dashed var(--line); font-size: .92rem; line-height: 1.5; }
+.lang-list li:last-child { border-bottom: 0; }
+.lang-list strong { display: block; color: var(--ink); font-size: .98rem; }
 
 /* ---------- CV ---------- */
 .cv-section {

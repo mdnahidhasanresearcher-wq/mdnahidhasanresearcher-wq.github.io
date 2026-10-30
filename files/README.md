@@ -1,11 +1,14 @@
 # Files folder
 
-Put your CV here with exactly this name:
+Put your PUBLIC CV here with exactly this name:
 
     MD_Nahid_Hasan_CV.pdf
 
 The "Download CV" button on the website links to this file.
 Until it exists, the website shows the note "The CV PDF has not been uploaded yet".
 
-Only upload files you are happy for anyone on the internet to see.
-Remove private details (home address, passport number, date of birth, phone number) from your public CV.
+IMPORTANT: everything in this repository is public on the internet.
+Before uploading, make a public version of your CV that REMOVES:
+- your home address
+- your phone number and WeChat ID
+- your referees' email addresses (you can write "Referees available on request")
