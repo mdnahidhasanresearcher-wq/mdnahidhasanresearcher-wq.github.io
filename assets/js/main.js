@@ -66,20 +66,14 @@
     a.addEventListener("click", function (e) { e.preventDefault(); });
   });
 
-  // CV button: if the PDF has not been uploaded yet, show a friendly note instead of a broken download
+  // CV section and buttons stay hidden until the CV PDF has been uploaded to the files folder
   var cvButton = document.getElementById("cv-button");
-  var cvNote = document.getElementById("cv-note");
-  if (cvButton && cvNote && window.fetch && location.protocol !== "file:") {
+  if (cvButton && window.fetch && location.protocol !== "file:") {
     fetch(cvButton.getAttribute("href"), { method: "HEAD", cache: "no-store" })
       .then(function (res) {
-        if (!res.ok) markCvMissing();
+        if (!res.ok) return;
+        document.querySelectorAll(".needs-cv").forEach(function (el) { el.hidden = false; });
       })
-      .catch(function () { /* network problem: leave the button as it is */ });
-  }
-  function markCvMissing() {
-    cvNote.hidden = false;
-    cvButton.setAttribute("aria-disabled", "true");
-    cvButton.style.opacity = "0.6";
-    cvButton.addEventListener("click", function (e) { e.preventDefault(); });
+      .catch(function () { /* network problem: keep the CV hidden */ });
   }
 })();

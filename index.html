@@ -39,7 +39,7 @@
         <li><a href="#teaching">Teaching</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a class="nav-cta" href="#cv">CV</a></li>
+        <li class="needs-cv" hidden><a class="nav-cta" href="#cv">CV</a></li>
       </ul>
     </nav>
   </header>
@@ -62,7 +62,7 @@
             Road Initiative.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#cv">Download CV</a>
+            <a class="btn btn-primary needs-cv" href="#cv" hidden>Download CV</a>
             <a class="btn btn-ghost" href="#contact">Get in touch</a>
           </div>
         </div>
@@ -237,14 +237,16 @@
         <div class="project-list">
           <article class="card project">
             <div class="project-head">
-              <span class="status">Manuscript in preparation</span>
+              <span class="status">Collaborative manuscript in preparation</span>
               <span class="project-date">July 2026 – Present</span>
             </div>
-            <h3>Multidimensional Assessment of Green Hydrogen Transition Readiness in Selected South and Southeast Asian Developing Economies</h3>
-            <p class="meta">Supervisor: Dr. Tausif Ali, School of Electrical and Electronic Engineering, Shandong University of Technology, China</p>
+            <!--
+              Kept general on purpose: the exact title, supervisor, country sample, criteria and
+              method of this unpublished joint manuscript are not shown until the supervisor agrees.
+            -->
+            <h3>Green Hydrogen Transition Readiness in South and Southeast Asian Developing Economies</h3>
             <ul class="bullets">
-              <li>Readiness assessment of eight developing economies (Bangladesh, Sri Lanka, Pakistan and five ASEAN economies) across four criteria and 20 sub-criteria, using the LOPCOW-TOPSIS multi-criteria decision-making (MCDM) method; implementation led by the supervisor.</li>
-              <li>Contributed to country selection and the criteria framework; collected secondary data (World Bank, IMF, IEA, IRENA, AidData) and reviewed the literature.</li>
+              <li>Contributed to country selection and the criteria framework; collected secondary data from public sources and reviewed the literature.</li>
               <li>Drafting the introduction, discussion and policy implications, including the political-economy interpretation.</li>
             </ul>
           </article>
@@ -294,9 +296,8 @@
         <h3 class="sub-title">Works in Progress</h3>
         <ol class="pub-list">
           <li>
-            “Multidimensional Assessment of Green Hydrogen Transition Readiness in Selected South and
-            Southeast Asian Developing Economies.” Research manuscript, <em>in preparation</em>
-            (supervised by Dr. Tausif Ali, Shandong University of Technology).
+            Collaborative research manuscript on green hydrogen transition readiness in South and
+            Southeast Asian developing economies. <em>In preparation.</em>
           </li>
           <li>
             “Political Economy Frameworks in Clean Energy Transition: A Systematic Review” (working title).
@@ -373,7 +374,8 @@
     </section>
 
     <!-- ================= CV DOWNLOAD ================= -->
-    <section class="section cv-section" id="cv">
+    <!-- This section stays hidden until files/MD_Nahid_Hasan_CV.pdf exists (see assets/js/main.js). -->
+    <section class="section cv-section needs-cv" id="cv" hidden>
       <div class="container narrow cv-box">
         <h2 class="section-title light"><span class="section-num">08</span>Curriculum Vitae</h2>
         <p>Download my full academic CV as a PDF.</p>
@@ -386,7 +388,6 @@
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
           Download CV (PDF)
         </a>
-        <p class="cv-note" id="cv-note" hidden>The CV PDF has not been uploaded yet — please check back soon.</p>
         <p class="cv-updated">Academic referees available on request.</p>
       </div>
     </section>
@@ -400,8 +401,8 @@
           energy-policy work.
         </p>
         <!--
-          HOW TO ADD A LINK: replace href="#" with your real address, delete the
-          class "is-placeholder", and replace "[TO ADD]" with a short label.
+          HOW TO ADD A LINK (e.g. Google Scholar, ResearchGate): copy one whole
+          <li>…</li> block below and change the address (href), the name and the label.
         -->
         <ul class="link-list">
           <li>
@@ -426,18 +427,6 @@
             <a class="link-card" href="https://doi.org/10.17605/OSF.IO/JVCD3" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/></svg>
               <span><strong>OSF Preregistration</strong><small>10.17605/OSF.IO/JVCD3</small></span>
-            </a>
-          </li>
-          <li>
-            <a class="link-card is-placeholder" href="#">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9 12 3l10 6-10 6z"/><path d="M6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/></svg>
-              <span><strong>Google Scholar</strong><small>[TO ADD]</small></span>
-            </a>
-          </li>
-          <li>
-            <a class="link-card is-placeholder" href="#">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 16V8h3a2.5 2.5 0 0 1 0 5H9M12 13l3 3"/></svg>
-              <span><strong>ResearchGate</strong><small>[TO ADD]</small></span>
             </a>
           </li>
           <li>

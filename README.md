@@ -21,30 +21,31 @@ Live address (after publishing): **https://mdnahidhasanresearcher-wq.github.io/*
 ## How to fill in your information
 
 1. Open `index.html` (on GitHub, open the file and click the pencil ✏️ icon).
-2. Search for `[TO ADD` (Ctrl+F / Cmd+F). Each one is a gap to fill.
-3. Replace the placeholder text with your real information. On the live site, `[TO ADD]` text is highlighted in yellow so you can spot what is still missing.
+2. Find the section you want to change (each one starts with a comment such as `<!-- ===== EDUCATION ===== -->`).
+3. Change the text between the tags. Keep the `<` `>` tags themselves as they are.
 4. Each section has a comment starting with `HOW TO ADD`. It shows which block to copy when you need more entries, for example another degree or publication.
 5. Click **Commit changes**. The live site updates within about 1–2 minutes.
 
 ### Add your CV
 Upload your PDF into the `files` folder with exactly this name: `MD_Nahid_Hasan_CV.pdf`.
-The Download CV button then works automatically.
 
 Use a **public version** of your CV. Remove your home address, phone number, WeChat ID and your referees' email addresses first. Write "Referees available on request" instead.
 
-### What is still marked [TO ADD]
-- Google Scholar link (create a profile at scholar.google.com once you have a publication)
-- ResearchGate link
-- Your photo (optional)
+The CV section, the "CV" menu button and the "Download CV" button are **hidden automatically until this file exists**. Upload the PDF and they appear by themselves (refresh the page after 1–2 minutes).
+
+### Not on the website yet (add when ready)
+- Google Scholar and ResearchGate links. Copy one of the link blocks in the Contact section of `index.html`.
+- Your photo (optional).
+- Full details of the collaborative green hydrogen manuscript. The site shows only a general description until your supervisor agrees.
 
 ### Add your photo
 Upload a square photo to `assets/img/profile.jpg`. Then, in `index.html`, find the comment `TO ADD YOUR PHOTO` and follow its instructions.
 
 ### Add your links (LinkedIn, ORCID, Google Scholar, email…)
-In the **Contact** section of `index.html`, for each link:
-- change `href="#"` to your real address (for email, use `href="mailto:you@example.com"`)
-- delete `is-placeholder` from the `class="…"`
-- replace `[TO ADD]` with a short label, such as your ORCID number.
+In the **Contact** section of `index.html`, copy one whole `<li>…</li>` link block, then change:
+- the address in `href="…"` (for email, use `href="mailto:you@example.com"`)
+- the name inside `<strong>…</strong>`
+- the short label inside `<small>…</small>`.
 
 ## Privacy reminders
 - Anything in this repository is **public**, even files you don't link to.
@@ -56,11 +57,11 @@ In the **Contact** section of `index.html`, for each link:
 ## How to turn on the website (one time)
 1. On GitHub, go to the repository → **Settings** → **Pages**.
 2. Under **Build and deployment**, set *Source* to **Deploy from a branch**.
-3. Choose branch **main** and folder **/ (root)**, then click **Save**.
+3. Choose branch **main** and folder **/ (root)**, then click **Save**. (GitHub Pages is already switched on for this repository, so check that these settings are correct.)
 4. Wait 1–2 minutes and visit https://mdnahidhasanresearcher-wq.github.io/
 
 ## Preview on your own computer (optional)
-Double-click `index.html` to open it in your browser.
+Double-click `index.html` to open it in your browser. (The CV section always stays hidden in this mode.)
 For a more accurate preview, run this in the folder, then open http://localhost:8000:
 
 ```bash
