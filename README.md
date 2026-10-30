@@ -54,11 +54,17 @@ In the **Contact** section of `index.html`, copy one whole `<li>…</li>` link b
 - Don't publish other people's contact details (for example, referees' emails) without their permission.
 - Check with your supervisors before adding new details or results from joint, unpublished work.
 
-## How to turn on the website (one time)
-1. On GitHub, go to the repository → **Settings** → **Pages**.
-2. Under **Build and deployment**, set *Source* to **Deploy from a branch**.
-3. Choose branch **main** and folder **/ (root)**, then click **Save**. (GitHub Pages is already switched on for this repository, so check that these settings are correct.)
-4. Wait 1–2 minutes and visit https://mdnahidhasanresearcher-wq.github.io/
+## How to publish the website
+GitHub Pages is already switched on for this repository and publishes the `main` branch.
+Anything merged into `main` goes live within about 1–2 minutes at the permanent address:
+
+**https://mdnahidhasanresearcher-wq.github.io/**
+
+1. Open the pull request from the review branch into `main` and check the "Files changed" tab.
+2. Click **Merge pull request**, then **Confirm merge**.
+3. Go to the **Actions** tab and wait for "pages build and deployment" to show a green tick.
+4. Open the address above (press Ctrl+F5 / Cmd+Shift+R to refresh).
+5. If it doesn't appear, open **Settings → Pages** and check: *Source* = **Deploy from a branch**, branch = **main**, folder = **/ (root)**.
 
 ## Preview on your own computer (optional)
 Double-click `index.html` to open it in your browser. (The CV section always stays hidden in this mode.)

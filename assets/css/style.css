@@ -286,3 +286,8 @@ p.todo, li.todo { display: inline-block; }
   .timeline-date { padding-left: 28px; }
   .card-grid.two { grid-template-columns: 1fr; }
 }
+
+/* ---------- Looking ahead (About section) ---------- */
+.goals { margin-top: 28px; padding: 22px 24px; border-radius: var(--radius); background: linear-gradient(135deg, rgba(15, 118, 110, .07), rgba(201, 162, 39, .07)); border: 1px solid var(--line); }
+.goals h3 { font-size: 1.15rem; margin-bottom: 10px; }
+.goals strong { color: var(--ink); }
